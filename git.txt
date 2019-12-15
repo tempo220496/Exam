@@ -1,0 +1,181 @@
+git config --global.name "Temirbek"====dlya noutbukov
+git config --local.name "Temirbek"===dlya komputerov
+
+git config --global.email "temir.raev96@gmail.com"====dlya noutbukov
+git config --local.email "temir.raev96@gmail.com"===dlya komputerov
+
+git config --global core.autocrlf true====dlya noutbukov
+git config --local core.autocrlf true===dlya komputerov
+
+git config --list======spisok aktivnih
+
+git init====sozdat papku
+
+esli est vetka master to vvodim sleduiushie kommandi
+
+git status===proverka chto nahodyatsya v papke
+
+sozdat file index.html
+
+git status====proverka chto izmenilos
+
+index.html
+
+git add index.html===dobavit file v bufer
+
+git status====proverka chto izmenilos
+
+new file:   index.html
+
+git commit -m "first commit"--zacommitit s nazvaniem
+
+git log===proverka commitov
+
+first commit
+
+dobavit tegi vnutri body so slovami v index.html
+
+git status====proverka chto izmenilos
+
+modified:   index.html
+
+git add index.html===dobavit file v bufer
+
+git status====proverka chto izmenilos
+
+modified:    index.html
+
+git commit===vim redaktor
+chtobi viiti iz vim nujno napisat "add title"->esc->shift+:->wq
+
+git commit -m "add title"
+
+git log===proverka commitov
+
+git status====proverka chto izmenilos v vetke master
+modified:   index.html
+css/
+
+git add index.html
+
+git status====proverka chto izmenilos v vetke master
+modified:   index.html===dobavilos v bufer
+css
+
+git commit -m "add footer in index.html"
+
+git status====proverka chto izmenilos v vetke master
+css/
+
+git add .===dobavlyaet vse papki i files v bufer
+
+git status
+new file: css/style.css
+
+git commit -m "add stylesheet"
+
+git log
+
+git log --oneline====bolee kompactnii vid
+
+napisat karakuli v index.html
+
+git diff=====chto novogo v index.html
+vihod wq
+
+git status
+modified:  index.html
+
+git checkout -- index.html====otkatit nazad
+
+git status
+
+git add .
+
+git status
+
+git diff --staged====pokaji izmenenie v bufere
+
+git status
+
+git reset HEAD index.html=====dostat glavnii poslidnii file is bufera
+
+git status
+
+git checkout -- index.html====snova otkatit nazad
+
+git log --oneline
+
+git checkout ########<-nomer kakogo libo commita====chtobi prosmotret kakoi libo commit
+
+git checkout master====vernutsya na glavnuiu posledniuu commit
+
+git log --oneline
+
+git reset --hard #######=====vernutsya na kakoeto commit s udaleniem posleduiushih
+
+git log --oneline
+
+git reset --hard #######<-poslednii commit====chtobi vernutsya k poslednemu commitu
+
+git revert HEAD --no-edit
+
+git log --oneline
+
+git status
+
+repositoria doljno bit chistim
+
+git checkout -b nav====sozdat novuiu vetku "nav"
+
+git branch --list =====pokazat vetki
+git branch =====toje samoe
+
+dobavit nav block v index.html v vetke nav
+
+git commit -am "add nav structure"===srazu dobavit v bufer i zacommitit odnovremenno
+
+git log --oneline
+
+git checkout master====perekluchitsya v vetku master
+
+sozdat vnutri nav vetki button tag
+
+git commit -am "add mobile toggle"
+
+dobavit icon k toggle button
+
+git commit -am "add icon to toggle button"
+
+git log --oneline
+
+git checkout master
+
+dobavit stili v style.css
+
+git commit -am "add container style"
+
+dobavit stili dlya media.css
+
+git commit -am "add media query for container"
+
+git status
+repositorii doljno bit pustim pered sliyaniem
+
+git merge nav
+
+git log --oneline --graph====pokajet strukturu sliyaniya vetok
+
+git merge --abort===sdelaet abort esli proizoshel conflict v processe sliyanii
+
+sozdat repository na saite github v formate ssh
+
+git remote add origin git@github.com:tempo220496/lesson.git
+
+ssh-keygen
+
+git push -u origin master====otpravit v udalenuiu repositoriiu 
+
+git commit -am "commit for remote repository"
+
+git push
