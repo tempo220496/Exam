@@ -1,6 +1,6 @@
 {
   "dependencies": {
-    "bootstrap": "^4.4.1",
+    "bootstrap": "4.4.1",
     "bourbon": "^6.0.0",
     "font-awesome": "4.7.0",
     "hamburgers": "^1.1.3",
