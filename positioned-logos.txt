@@ -1,0 +1,167 @@
+<img src="img/mail.png" alt="img/mail.png" class="section5-img first">
+<img src="img/mail-copy.png" alt="img/mail-copy.png" class="section5-img second">
+<img src="img/letter.png" alt="img/letter.png" class="section5-img third">
+<img src="img/mail.png" alt="img/mail.png" class="section5-img fourth">
+<img src="img/letter.png" alt="img/letter.png" class="section5-img fiveth">
+<img src="img/mail.png" alt="img/mail.png" class="section5-img sixth">
+<img src="img/letter.png" alt="img/letter.png" class="section5-img seventh">
+<img src="img/mail-copy.png" alt="img/mail-copy.png" class="section5-img eighth">
+<img src="img/letter.png" alt="img/letter.png" class="section5-img nineth">
+<img src="img/mail.png" alt="img/mail.png" class="section5-img tenth">
+<img src="img/mail.png" alt="img/mail.png" class="section5-img eleventh">
+<img src="img/letter.png" alt="img/letter.png" class="section5-img twelth">
+<img src="img/letter.png" alt="img/letter.png" class="section5-img thirteenth">
+<img src="img/mail-copy.png" alt="img/mail-copy.png" class="section5-img fourteenth">
+<img src="img/mail.png" alt="img/mail.png" class="section5-img fiveteenth">
+<img src="img/letter.png" alt="img/letter.png" class="section5-img sixteenth">
+<img src="img/letter.png" alt="img/letter.png" class="section5-img seventeenth">
+<img src="img/mail.png" alt="img/mail.png" class="section5-img eighteenth">
+<img src="img/mail.png" alt="img/mail.png" class="section5-img nineteenth">
+
+
+
+//sass properties
+
+
+.section5-img
+	position: absolute
+.first
+	top: 52px
+	left: 48px
+.second
+	top: 30px
+	left: 308px
+.third
+	left: 180px
+	top: 196px
+.fourth
+	transform: scaleX(-1)
+	top: 290px
+	left: 0
+.fiveth
+	transform: scaleX(-1)
+	top: 345px
+	left: 200px
+.sixth
+	transform: scaleX(-1) rotate(-15deg)
+	top: 175px
+	left: 397px
+.seventh
+	left: 509px
+	top: 318px
+	transform: rotate(17deg)
+.eighth
+	top: 241px
+	left: 619px
+.nineth
+	transform: scaleX(-1)
+	left: 525px
+	top: 59px
+.tenth
+	left: 928px
+	top: -20px
+.eleventh
+	transform: scaleX(-1) rotate(5deg)
+	left: 943px
+	top: 368px
+.twelth
+	transform: rotate(10deg)
+	right: 660px
+	top: 10px
+.thirteenth
+	right: 630px
+	transform: scaleX(-1)
+.fourteenth
+	top: 70px
+	right: 405px
+.fiveteenth
+	transform: rotate(-15deg)
+	right: 442px
+	top: 268px
+.sixteenth
+	transform: scaleX(-1) rotate(-20deg)
+	right: 282px
+	bottom: -10px
+.seventeenth
+	right: 207px
+	top: 195px
+.eighteenth
+	transform: scaleX(-1)
+	top: 27px
+	right: 105px
+.nineteenth
+	right: 0
+@media screen and (max-width: 1366px)
+	.third
+		left: 100px
+	.fourth
+		left: 40px
+	.sixth
+		top: 100px
+		left: 200px
+	.seventh
+		top: 230px
+		left: 300px
+	.eighth
+		top: 80px
+		left: 880px
+	.nineth
+		left: 450px
+	.tenth
+		top: 60px
+		left: 1060px
+	.eleventh
+		left: 600px
+		top: 320px
+	.thirteenth
+		left: 400px
+		bottom: 20px
+	.fourteenth
+		top: 180px
+		right: 200px
+	.fiveteenth
+		right: 470px
+		top: 320px
+	.sixteenth
+		right: 280px
+		bottom: 50px
+	.seventeenth
+		right: 150px
+		top: 300px
+	.eighteenth
+		top: 100px
+		right: 60px
+@media screen and (max-width: 320px)
+	.rounded-bar
+		width: 15rem
+	.first
+		top: 10px
+		left: 10px
+	.third
+		left: 190px
+		top: 100px
+	.fourth
+		left: 120px
+		top: 200px
+	.fiveth
+		top: 220px
+		left: 220px
+	.sixth
+		top: 30px
+	.fourteenth
+		left: 20px
+		top: 240px
+	.sixteenth
+		left: 20px
+		bottom: 20px
+	.seventeenth
+		top: 100px
+		left: 30px
+	.eighteenth
+		top: 25px
+		right: 140px
+	.nineteenth
+		left: 200px
+		bottom: 10px
+
+
