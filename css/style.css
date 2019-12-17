@@ -170,6 +170,19 @@ body {
   color: #1a54e7;
   padding-right: 2.1875rem;
   font-size: 1.125rem;
+  position: relative;
+}
+.nav-link-blue:hover {
+  text-decoration: none;
+}
+.nav-link-blue:hover:after {
+  content: "";
+  width: 71px;
+  height: 3px;
+  background-color: #1a54e7;
+  position: absolute;
+  left: -10px;
+  top: 200%;
 }
 
 .nav-box {
