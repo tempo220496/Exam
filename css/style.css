@@ -7,7 +7,9 @@ html, body {
 
 body {
   font-family: sans-serif;
-  min-width: 20rem;
+  min-width: 320px;
+  height: 2000px;
+  user-select: none;
 }
 
 @font-face {
@@ -132,6 +134,24 @@ body {
   font-family: "PTSans-Bold";
 }
 
+.categ-links {
+  transition: all 0.3s linear;
+}
+
+.categ-links:hover {
+  background-color: white;
+  text-decoration: none;
+  color: black;
+}
+
+.preload-transitions * {
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -ms-transition: none !important;
+  -o-transition: none !important;
+  transition: none !important;
+}
+
 .wrapper {
   max-width: 2000px;
   margin: 0 auto;
@@ -185,8 +205,34 @@ body {
   top: 200%;
 }
 
+.trips3:hover:after {
+  left: -15px;
+}
+
+.animals4:hover:after {
+  left: -5px;
+}
+
+.fashion5:hover:after {
+  left: -5px;
+}
+
+.tech6:hover:after {
+  left: -15px;
+}
+
 .nav-box {
   padding-right: 2.1875rem;
+  position: relative;
+}
+.nav-box:hover:after {
+  content: "";
+  width: 71px;
+  height: 3px;
+  background-color: #1a54e7;
+  position: absolute;
+  left: -15px;
+  top: 146%;
 }
 
 nav {
@@ -198,6 +244,21 @@ nav {
   padding: 1.5rem;
 }
 
+.progress {
+  background: linear-gradient(to right, #8200b2 var(--scroll), transparent 0);
+  background-repeat: no-repeat;
+  position: fixed;
+  width: 100%;
+  height: 2px;
+  z-index: 1;
+  border-radius: none;
+}
+
+@media screen and (max-width: 320px) {
+  body {
+    height: 320px;
+  }
+}
 .section1 .card {
   margin-top: 3.125rem;
   background-color: #f6f6f6;
@@ -290,9 +351,9 @@ nav {
 
 @media screen and (max-width: 320px) {
   .section2-banner {
-    width: 320px;
-    height: 106px;
-    background-position: center;
+    width: 960px;
+    height: 318px;
+    background-position: center top;
   }
 }
 .section3 .card-info {
@@ -582,6 +643,60 @@ nav {
     right: 60px;
   }
 }
+@media screen and (max-width: 320px) {
+  .rounded-bar {
+    width: 15rem;
+  }
+
+  .first {
+    top: 10px;
+    left: 10px;
+  }
+
+  .third {
+    left: 190px;
+    top: 100px;
+  }
+
+  .fourth {
+    left: 120px;
+    top: 200px;
+  }
+
+  .fiveth {
+    top: 220px;
+    left: 220px;
+  }
+
+  .sixth {
+    top: 30px;
+  }
+
+  .fourteenth {
+    left: 20px;
+    top: 240px;
+  }
+
+  .sixteenth {
+    left: 20px;
+    bottom: 20px;
+  }
+
+  .seventeenth {
+    top: 100px;
+    left: 30px;
+  }
+
+  .eighteenth {
+    top: 25px;
+    right: 140px;
+  }
+
+  .nineteenth {
+    left: 200px;
+    bottom: 10px;
+  }
+}
 .footer {
   height: 177px;
   padding: 5rem;
@@ -594,6 +709,12 @@ nav {
   text-align: center;
   font-size: 1.125rem;
   color: #a7acbc;
+}
+
+@media screen and (max-width: 320px) {
+  .footer {
+    padding: 3rem 5rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
