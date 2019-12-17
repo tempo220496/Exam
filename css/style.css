@@ -78,12 +78,6 @@ body {
   justify-content: space-between;
 }
 
-#nature {
-  color: white;
-  background: #58b600;
-  border-radius: none;
-}
-
 .card-img-top {
   position: relative;
 }
@@ -98,8 +92,53 @@ body {
   background-color: #f6f6f6;
 }
 
+.people {
+  color: #ffffff;
+  background-color: #1a54e7;
+  padding: 0.8125rem 1.1875rem;
+  font-size: 1.125rem;
+  font-family: "PTSans-Bold";
+}
+
+.trips {
+  color: #ffffff;
+  background-color: #d90445;
+  padding: 0.8125rem 2rem;
+  font-size: 1.125rem;
+  font-family: "PTSans-Bold";
+}
+
+.tech {
+  color: #ffffff;
+  background-color: #000;
+  padding: 0.8125rem 2rem;
+  font-size: 1.125rem;
+  font-family: "PTSans-Bold";
+}
+
+.nature {
+  color: #ffffff;
+  background-color: #58b600;
+  padding: 0.8125rem 1.1875rem;
+  font-size: 1.125rem;
+  font-family: "PTSans-Bold";
+}
+
+.fashion {
+  color: #ffffff;
+  background-color: #8200b2;
+  padding: 0.8125rem 1.1875rem;
+  font-size: 1.125rem;
+  font-family: "PTSans-Bold";
+}
+
+.wrapper {
+  max-width: 2000px;
+  margin: 0 auto;
+}
+
 .top {
-  max-height: 4.375rem;
+  height: 4.375rem;
   background-image: linear-gradient(90deg, #1a54e7 50%, #fff 50%);
   margin: 0 auto;
 }
@@ -133,8 +172,22 @@ body {
   font-size: 1.125rem;
 }
 
+.nav-box {
+  padding-right: 2.1875rem;
+}
+
 nav {
   max-width: 75rem;
+}
+
+.nav-link-img {
+  background: #f1f1f1;
+  padding: 1.5rem;
+}
+
+.section1 .card {
+  margin-top: 3.125rem;
+  background-color: #f6f6f6;
 }
 
 .firstPicture {
@@ -154,10 +207,32 @@ nav {
     background-position: right;
   }
 }
+.card-info {
+  color: #b0b0b0;
+}
+
+.section1 .card {
+  margin-top: 3.125rem;
+  background-color: #f6f6f6;
+}
+
+.section1 .trips {
+  position: relative;
+  top: 75%;
+}
+
+.section1 .tech {
+  position: relative;
+  top: 75%;
+}
+
 .section2-banner {
   background: url("../img/secondRowPicture.jpg") no-repeat center;
   height: 400px;
   background-size: cover;
+  margin-top: 3.125rem;
+  margin-bottom: 3.125rem;
+  padding-top: 2rem;
 }
 
 .section2-title {
@@ -190,9 +265,10 @@ nav {
   font-size: 1.125rem;
 }
 
-.section2-info {
+.section2-info-date {
   font-size: 0.875rem;
   margin-right: 1rem;
+  color: #b0b0b0;
 }
 
 .section2-name-link {
@@ -206,6 +282,80 @@ nav {
     background-position: center;
   }
 }
+.section3 .card-info {
+  color: #b0b0b0;
+}
+
+.thirdRowPicture-1 {
+  height: 15.1825rem;
+  background: url("../img/thirdRowPicture-1.jpg") no-repeat;
+}
+
+.thirdRowPicture-2 {
+  height: 15.1825rem;
+  background: url("../img/thirdRowPicture-2.jpg") no-repeat;
+}
+
+.thirdRowPicture-3 {
+  height: 15.1825rem;
+  background: url("../img/thirdRowPicture-3.jpg") no-repeat;
+}
+
+.fourthRowPicture-1 {
+  height: 15.1825rem;
+  background: url("../img/fourthRowPicture-1.jpg") no-repeat;
+}
+
+.fourthRowPicture-2 {
+  height: 15.1825rem;
+  background: url("../img/fourthRowPicture-2.jpg") no-repeat;
+}
+
+.fourthRowPicture-3 {
+  height: 15.1825rem;
+  background: url("../img/fourthRowPicture-3.jpg") no-repeat;
+}
+
+.section3 .trips {
+  position: relative;
+  top: 75%;
+}
+
+.section3 .tech {
+  position: relative;
+  top: 75%;
+}
+
+.section3 .nature {
+  position: relative;
+  top: 75%;
+}
+
+.section3 .people {
+  position: relative;
+  top: 75%;
+}
+
+.section3 .fashion {
+  position: relative;
+  top: 75%;
+}
+
+.section4 .card {
+  margin-top: 3.125rem;
+  background-color: #f6f6f6;
+}
+
+.section4 .trips {
+  position: relative;
+  top: 75%;
+}
+
+.section4 .tech {
+  position: relative;
+  top: 75%;
+}
+
 .section5 {
   height: 26.125rem;
   background-color: #1a54e7;

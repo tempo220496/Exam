@@ -7,6 +7,7 @@
     <title>For exam</title>
 	<link rel="stylesheet" href="css/style.css" type="text/css">
 	<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+	<!-- <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap-grid.min.css"> -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
@@ -22,6 +23,7 @@
 							  <span class="navbar-toggler-icon"></span>
 							</button>
 							<div class="collapse navbar-collapse" id="navbarText">
+							<a href="#"><img src="img/search.png" alt="search" class="nav-link-img"></a>
 							  <ul class="navbar-nav mr-auto">
 								<li class="nav-item">
 								  <a class="nav-link ptsans-regular" href="#">About</a>
@@ -104,7 +106,7 @@
 								<div class="col-md-6 col-sm-4">
 									<div class="card">
 										<div class="card-img-top firstPicture">
-											<a href="#" class="card-img-link bg-crimson ptsans-bold">Trips</a>
+											<a href="#" class="trips">Trips</a>
 										</div>
 										<div class="card-body">
 											<p class="card-text ptserif-regular">Donec elementum dui semper, pretium dui quis, pretium nisl. Nunc quis ornare odio.</p>
@@ -115,7 +117,7 @@
 								<div class="col-md-6 col-sm-6">
 									<div class="card">
 										<div class="card-img-top secondPicture">
-											<a href="#" class="card-img-link bg-black ptsans-bold">Tech</a>
+											<a href="#" class="tech">Tech</a>
 										</div>
 										<div class="card-body">
 											<p class="card-text ptserif-regular">Maecenas quis lobortis nunc. Nullam sit amet augue vel odio congue vulputate a ut nisi.</p>
@@ -131,12 +133,16 @@
 						<div class="row">
 							<div class="col-md-12 col-sm-12">
 								<div class="section2-banner text-center">
-									<h1 class="section-title text-white ptserif-regular">
+									<h1 class="section2-title text-white ptserif-regular">
 										Proin congue elit fringilla
 									</h1>
 									<p class="section2-text text-white ptserif-regular">
 										sodales tellus interdum fermentum nulla. Aliquam vitae arcu condimentum, consectetur diam sed, ultrices urna. 
 									</p>
+									<div class="section2-info d-flex justify-content-between align-items-center">
+										<a href="#" class="trips">Trips</a>
+										<span class="section2-info-date">11 september 2016 | <a href="#" class="section2-link-name">John Doe</a></span>
+									</div>
 								</div>
 							</div>
 						</div>
@@ -147,8 +153,9 @@
 						<div class="row align-content-between">
 							<div class="col-md-4 col-sm-4">
 								<div class="card">
-									<img src="img/thirdRowPicture-1.jpg" alt="img/thirdRowPicture-1.jpg" class="card-img-top">
-									<a href="#" class="btn btn-positioned" id="nature">Nature</a>
+									<div class="thirdRowPicture-1">
+										<a href="#" class="nature">Nature</a>
+									</div>
 									<div class="card-body">
 										<p class="card-text ptserif-regular" style="margin-top: 1rem;">
 											Donec elementum dui semper, pretium dui quis, pretium nisl.
@@ -159,8 +166,9 @@
 							</div>
 							<div class="col-md-4 col-sm-4">
 								<div class="card">
-									<img src="img/thirdRowPicture-2.jpg" alt="img/thirdRowPicture-2.jpg" class="card-img-top">
-									<a href="#" class="btn btn-positioned" id="nature">Nature</a>
+									<div class="thirdRowPicture-2">
+										<a href="#" class="people">People</a>
+									</div>
 									<div class="card-body">
 										<p class="card-text ptserif-regular" style="margin-top: 1rem;">
 											Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae.
@@ -171,8 +179,9 @@
 							</div>
 							<div class="col-md-4 col-sm-4">
 								<div class="card">
-									<img src="img/thirdRowPicture-3.jpg" alt="img/thirdRowPicture-3.jpg" class="card-img-top">
-									<a href="#" class="btn btn-positioned" id="nature">Nature</a>
+									<div class="thirdRowPicture-3">
+										<a href="#" class="tech">Tech</a>
+									</div>
 									<div class="card-body">
 										<p class="card-text ptserif-regular" style="margin-top: 1rem;">
 											Sed arcu ipsum, convallis quis porttitor bibendum, convallis non enim.
@@ -183,8 +192,9 @@
 							</div>
 							<div class="col-md-4 col-sm-4">
 								<div class="card">
-									<img src="img/fourthRowPicture-1.jpg" alt="img/fourthRowPicture-1.jpg" class="card-img-top">
-									<a href="#" class="btn btn-positioned" id="nature">Nature</a>
+									<div class="fourthRowPicture-1">
+										<a href="#" class="trips">Trips</a>
+									</div>
 									<div class="card-body">
 										<p class="card-text ptserif-regular" style="margin-top: 1rem;">
 											Donec elementum dui semper, pretium dui quis, pretium nisl.
@@ -195,8 +205,9 @@
 							</div>
 							<div class="col-md-4 col-sm-4">
 								<div class="card">
-									<img src="img/fourthRowPicture-2.jpg" alt="img/fourthRowPicture-2.jpg" class="card-img-top">
-									<a href="#" class="btn btn-positioned" id="nature">Nature</a>
+									<div class="fourthRowPicture-2">
+										<a href="#" class="trips">Trips</a>
+									</div>
 									<div class="card-body">
 										<p class="card-text ptserif-regular" style="margin-top: 1rem;">
 											Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae.
@@ -207,8 +218,9 @@
 							</div>
 							<div class="col-md-4 col-sm-4">
 								<div class="card">
-									<img src="img/fourthRowPicture-3.jpg" alt="img/fourthRowPicture-3.jpg" class="card-img-top">
-									<a href="#" class="btn btn-positioned" id="nature">Nature</a>
+									<div class="fourthRowPicture-3">
+										<a href="#" class="fashion">Fashion</a>
+									</div>
 									<div class="card-body">
 										<p class="card-text ptserif-regular" style="margin-top: 1rem;">
 											Sed arcu ipsum, convallis quis porttitor bibendum, convallis non enim.
@@ -226,7 +238,7 @@
 							<div class="col-md-6 col-sm-4">
 								<div class="card">
 									<div class="card-img-top firstPicture">
-										<a href="#" class="card-img-link bg-crimson ptsans-bold">Trips</a>
+										<a href="#" class="trips">Trips</a>
 									</div>
 									<div class="card-body">
 										<p class="card-text ptserif-regular">Donec elementum dui semper, pretium dui quis, pretium nisl. Nunc quis ornare odio.</p>
@@ -237,7 +249,7 @@
 							<div class="col-md-6 col-sm-6">
 								<div class="card">
 									<div class="card-img-top secondPicture">
-										<a href="#" class="card-img-link bg-black ptsans-bold">Tech</a>
+										<a href="#" class="tech">Tech</a>
 									</div>
 									<div class="card-body">
 										<p class="card-text ptserif-regular">Maecenas quis lobortis nunc. Nullam sit amet augue vel odio congue vulputate a ut nisi.</p>
