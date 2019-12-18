@@ -211,10 +211,34 @@ nav
 #demo .card-info
 	position: absolute
 	top: 440px
-	right: 20px
+	right: 0
+@media screen and (max-width: 992px)
+	.navbar-nav
+		top: -72px
+		position: relative
+		z-index: 2
+	.nav-item
+		background-color: rgb(255,255,255)
+		display: flex
+		align-items: center
+		justify-content: center
+		padding-right: 0
+		border-bottom: 1px solid #1a54e7
+	.nav-link
+		cursor: pointer
+	.nav-link-blue
+		padding: 0.5rem 0
+		cursor: pointer
+	.navbar-nav .last
+		padding: 1rem 0
+	.navbar-nav .nav-box
+		padding-right: 0
+@media screen and (max-width: 768px)
+	.header .covered-block
+		display: none
 @media screen and (max-width: 320px)
 	body
-		height: 320px
+		width: 320px
 
 
 
@@ -265,7 +289,7 @@ nav
 .section2-text
 	font-size: 1.125rem
 	line-height: 30px
-	width: 610px
+	max-width: 610px
 	margin: 0 auto
 .section2-block
 	margin-top: 2rem
@@ -284,13 +308,20 @@ nav
 	color: #b0b0b0
 .section2-name-link
 	color: #194bcb
-@media screen and (max-width: 320px)
+@media screen and (max-width: 992px)
+	.section2-info-date
+		color: white
+	.section2-link-name
+		color: white
+@media screen and (max-width: 768px)
 	.section2-banner
-		width: 320px
-		height: 212px
-		padding-top: none
-		background-position: center topcenter
-		background-size: auto
+		padding: 1rem
+	.section2-title
+		margin: 0
+		padding: 2.25rem 0 1rem
+		font-size: 3rem
+		line-height: 3rem
+		font-weight: normal
 
 
 
@@ -335,9 +366,6 @@ nav
 	background: url('../img/fourthRowPicture-3.jpg') no-repeat
 	border-radius: 10px 10px 0 0
 @media screen and (max-width: 576px)
-	// .section3 .card
-	// 	width: 318px
-	// 	margin: 1.125rem auto
 	.section3 .thirdRowPicture-1
 		background-size: cover
 	.section3 .thirdRowPicture-2
@@ -369,7 +397,14 @@ nav
 	height: 23.75rem
 .section3 .card-text
 	font-size: 1.125rem
-
+@media screen and (max-width: 768px)
+	.section3 .card-info
+		margin-left: 0
+	.vestibulum
+		margin-bottom: 0
+@media screen and (max-width: 576px)
+	.vestibulum
+		margin-bottom: 1rem
 
 
 
