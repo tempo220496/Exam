@@ -104,9 +104,6 @@ body
 	-ms-transition: $null-transition
 	-o-transition: $null-transition
 	transition: $null-transition
-@media screen and (max-width: 1200px)
-	.progress
-		display: none
 @media screen and (max-width: 576px)
 	body
 		background-color: #1a54e791
@@ -131,7 +128,6 @@ body
 	display: flex
 	align-items: center
 	justify-content: center
-	// height: 1.5rem
 	height: 100%
 .header .point
 	width: 6px
@@ -179,7 +175,7 @@ nav
 	background: #f1f1f1
 	padding: 1.5rem
 .progress
-	background: linear-gradient(to right, #1a54e7 var(--scroll),transparent 0)
+	background: linear-gradient(to right, yellow var(--scroll),transparent 0)
 	background-repeat: no-repeat
 	position: fixed
 	width: 100%
@@ -190,33 +186,37 @@ nav
 @media screen and (max-width: 768px)
 	.carousel-img
 		max-width: 535px
-		// background-position: center right
-.header .covered-block
+.header .covered-block1
 	position: absolute
-	z-index: 1
+	z-index: 2
 	top: 0
 	margin: 11.875rem auto 0
 	height: 500px
-	width: 75rem
-	// left: 0
+	max-width: 74rem
+	padding: 0
 .covered-title
 	color: white
 	max-width: 53.4609375rem
 	margin: 2.5rem auto 0
 	font-size: 3rem
+.carousel-img
+	object-position: 50% 50%
 #demo .people
 	position: absolute
-	top: 430px
+	top: 400px
 	left: 0
 #demo .card-info
 	position: absolute
-	top: 440px
+	top: 410px
 	right: 0
+@media screen and (max-width: 1200px)
+	.header .covered-block1
+		max-width: 58rem
 @media screen and (max-width: 992px)
 	.navbar-nav
 		top: -72px
 		position: relative
-		z-index: 2
+		z-index: 3
 	.nav-item
 		background-color: rgb(255,255,255)
 		display: flex
@@ -229,13 +229,47 @@ nav
 	.nav-link-blue
 		padding: 0.5rem 0
 		cursor: pointer
+		&:hover:after
+			content: ''
+			max-width: 4rem
+			height: 0.15rem
+			background-color: #1a54e7
+			position: absolute
+			left: -10px
+			top: 95%
 	.navbar-nav .last
 		padding: 1rem 0
 	.navbar-nav .nav-box
 		padding-right: 0
+		&:hover:after
+			content: none
+	.navbar-nav .nature1:hover:after
+			content: ''
+			width: 5rem
+			height: 0.25rem
+			background-color: #1a54e7
+			position: absolute
+			left: -10px
+			top: 90%
+	.header .covered-block1
+		max-width: 45rem
 @media screen and (max-width: 768px)
-	.header .covered-block
-		display: none
+	.header .covered-block1
+		max-width: 33.75rem
+		height: 34rem
+		position: relative
+		margin-top: 2rem
+	.header .covered-title
+		color: #1a54e7
+		margin-top: 0.5rem
+	#demo .people
+		position: absolute
+		top: 475px
+		left: 0
+	#demo .card-info
+		position: absolute
+		top: 490px
+		right: 0
 @media screen and (max-width: 320px)
 	body
 		width: 320px
@@ -434,7 +468,7 @@ nav
 	margin: 0 0 3rem
 .rounded-bar
 	margin: 0 auto
-	width: 25.125rem
+	max-width: 25.125rem
 	height: 3.125rem
 	background-color: rgba(255,255,255,.4)
 	border-radius: 40px
@@ -443,10 +477,12 @@ nav
 	color: #1a54e7
 	background-color: white
 	text-decoration: none
-	padding: 1rem 2.375rem
+	padding: .85rem 2.375rem
 	border-radius: 40px
 	margin-left: auto
-
+@media screen and (max-width: 440px)
+	.rounded-bar
+		min-width: 20rem
 
 
 
