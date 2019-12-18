@@ -104,7 +104,12 @@ body
 	-ms-transition: $null-transition
 	-o-transition: $null-transition
 	transition: $null-transition
+@media screen and (max-width: 1200px)
+	.progress
+		display: none
 @media screen and (max-width: 576px)
+	body
+		background-color: #1a54e791
 	.wrapper
 		padding: 1rem
 
@@ -191,7 +196,6 @@ nav
 	z-index: 1
 	top: 0
 	margin: 11.875rem 0 0
-	width: 75rem
 	height: 500px
 .covered-title
 	color: white
