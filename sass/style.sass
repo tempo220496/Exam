@@ -104,6 +104,9 @@ body
 	-ms-transition: $null-transition
 	-o-transition: $null-transition
 	transition: $null-transition
+@media screen and (max-width: 576px)
+	.wrapper
+		padding: 1rem
 
 
 
@@ -179,7 +182,11 @@ nav
 	z-index: 1
 .carousel
 	position: relative
-#demo .covered-block
+@media screen and (max-width: 768px)
+	.carousel-img
+		max-width: 535px
+		// background-position: center right
+#demo .col-md-12
 	position: absolute
 	z-index: 1
 	top: 0
@@ -283,9 +290,9 @@ nav
 
 .section3
 	padding-top: 2rem
-	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab)
+	background: linear-gradient(90deg, #ee7752, #e73c7e, #23a6d5, #23d5ab)
 	animation: change 10s ease-in-out infinite 
-	background-size: 400% 400%
+	background-size: 400% 100%
 	position: relative
 @keyframes change
 	0%
@@ -320,6 +327,22 @@ nav
 	height: 15.1825rem
 	background: url('../img/fourthRowPicture-3.jpg') no-repeat
 	border-radius: 10px 10px 0 0
+@media screen and (max-width: 576px)
+	// .section3 .card
+	// 	width: 318px
+	// 	margin: 1.125rem auto
+	.section3 .thirdRowPicture-1
+		background-size: cover
+	.section3 .thirdRowPicture-2
+		background-size: cover
+	.section3 .thirdRowPicture-3
+		background-size: cover
+	.section3 .fourthRowPicture-1
+		background-size: cover
+	.section3 .fourthRowPicture-2
+		background-size: cover
+	.section3 .fourthRowPicture-3
+		background-size: cover
 .section3 .trips
 	position: relative
 	top: 75%
