@@ -255,7 +255,7 @@ nav {
   position: fixed;
   width: 100%;
   height: 2px;
-  z-index: 3;
+  z-index: 1;
 }
 
 .carousel {
@@ -303,6 +303,10 @@ nav {
 @media screen and (max-width: 1200px) {
   .header .covered-block1 {
     max-width: 58rem;
+  }
+
+  .nav-link-blue {
+    padding-right: 0.6875rem;
   }
 }
 @media screen and (max-width: 992px) {
@@ -659,6 +663,7 @@ nav {
   background: url("../img/Newsletter.png") no-repeat;
   overflow: hidden;
   position: relative;
+  padding: 0 0.5rem;
 }
 
 .section5-title {
@@ -691,11 +696,6 @@ nav {
   margin-left: auto;
 }
 
-@media screen and (max-width: 440px) {
-  .rounded-bar {
-    min-width: 20rem;
-  }
-}
 .footer {
   height: 177px;
   padding: 5rem;
