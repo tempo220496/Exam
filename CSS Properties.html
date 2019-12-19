@@ -5,10 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>CSS properties</title>
+    <style>
+    	li{
+    		box-sizing: border-box;
+    		max-width: 300px;
+    		padding: 1rem 2rem;
+    		list-style-type: none;
+    		color: #E7DB74;
+    		background-color: #282923;
+    		border: 1px solid #F8E2A9;
+    	}
+    	.css-animation,.css-background,.css-border,.css-column,.css-display,.css-font,
+    	.css-list-style,.css-margin,.css-outline,.css-overflow,.css-padding,.css-page-break,
+    	.css-position,.css-text,.css-transform,.css-transition{
+    		display: none;
+    	}
+    	.main{
+    		position: relative
+    	}
+    	#animation:hover .css-animation{
+    		display: block;
+    		position: absolute;
+    		left: 260px;
+    		top: 0;
+    	}
+    </style>
 </head>
 <body>
     <ul class="css-properties">
-        <li>
+        <li class="main" id="animation">
             animation
             <ul class="css-animation">
                 <li>animation-delay</li>
@@ -273,7 +298,7 @@
         <li>perspective-origin</li>
         <li>pointer-events</li>
         <li>position 
-            <ul class="cs-position">
+            <ul class="css-position">
                 <li>top</li>
                 <li>right</li>
                 <li>bottom</li>
