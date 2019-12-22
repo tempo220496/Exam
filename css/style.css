@@ -255,7 +255,7 @@ nav {
   position: fixed;
   width: 100%;
   height: 2px;
-  z-index: 1;
+  z-index: 200;
 }
 
 .carousel {
@@ -271,7 +271,7 @@ nav {
   position: absolute;
   z-index: 2;
   top: 0;
-  margin: 11.875rem auto 0;
+  margin: 13rem auto 0;
   height: 500px;
   max-width: 74rem;
   padding: 0;
@@ -371,9 +371,10 @@ nav {
 @media screen and (max-width: 768px) {
   .header .covered-block1 {
     max-width: 33.75rem;
-    height: 34rem;
+    height: 36rem;
     position: relative;
-    margin-top: 2rem;
+    padding: 1.5rem 0;
+    margin-top: 0;
   }
 
   .header .covered-title {
@@ -383,19 +384,39 @@ nav {
 
   #demo .people {
     position: absolute;
-    top: 475px;
+    top: 505px;
     left: 0;
   }
 
   #demo .card-info {
     position: absolute;
-    top: 490px;
+    top: 525px;
     right: 0;
   }
 }
 @media screen and (max-width: 320px) {
   body {
     width: 320px;
+  }
+
+  .header .covered-block1 {
+    height: 700px;
+  }
+
+  #demo {
+    padding: 0 1rem;
+  }
+
+  #demo .people {
+    top: 580px;
+    left: 23%;
+    right: 25%;
+    text-align: center;
+  }
+
+  #demo .card-info {
+    top: 660px;
+    right: 15%;
   }
 }
 .section1 .card {
@@ -499,7 +520,7 @@ nav {
 }
 @media screen and (max-width: 768px) {
   .section2-banner {
-    padding: 1rem;
+    padding: 1rem 0;
   }
 
   .section2-title {
@@ -508,6 +529,14 @@ nav {
     font-size: 3rem;
     line-height: 3rem;
     font-weight: normal;
+  }
+
+  .section2 .trips {
+    top: 80%;
+  }
+
+  .section2 .section2-info-date {
+    top: 90%;
   }
 }
 .section3 {
