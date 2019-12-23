@@ -7,82 +7,61 @@
     <title>For exam</title>
 	<link rel="stylesheet" href="css/style.css" type="text/css">
 	<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
-	<!-- <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap-grid.min.css"> -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="node_modules/hamburgers/dist/hamburgers.css">
 </head>
 <body>
 	<div class="progress"></div>
     <div class="wrapper">
 			<header class="header">
 				<div class="top">
-					<div class="container">
-						<nav class="navbar navbar-expand-lg navbar-light bg-white">
-							<a class="navbar-brand ptsans-regular ptsans-bold text-white" href="#">Blog <span class="ptsans-bold">template</span></a>
-							<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-							  <span class="navbar-toggler-icon"></span>
-							</button>
-							<div class="collapse navbar-collapse" id="navbarText">
-							<a href="#"><img src="img/search.png" alt="search" class="nav-link-img"></a>
-							  <ul class="navbar-nav mr-auto">
-								<li class="nav-item">
-								  <a class="nav-link ptsans-regular" href="#">About</a>
-								</li>
-								<li class="nav-item">
-								  <a class="nav-link ptsans-regular" href="#">Cooperation</a>
-								</li>
-								<li class="nav-item">
-								  <a class="nav-link ptsans-regular" href="#">Contact</a>
-								</li>
-							  </ul>
-							  <ul class="navbar-nav">
-								<li class="nav-item">
-								  <a class="nav-link-blue ptsans-regular nature1" href="#">Nature</a>
-								</li>
-								<li class="nav-item">
-								  <a class="nav-link-blue ptsans-regular" href="#">People</a>
-								</li>
-								<li class="nav-item">
-								  <a class="nav-link-blue ptsans-regular trips3" href="#">Trips</a>
-								</li>
-								<li class="nav-item">
-								  <a class="nav-link-blue ptsans-regular animals4" href="#">Animals</a>
-								</li>
-								<li class="nav-item">
-								  <a class="nav-link-blue ptsans-regular fashion5" href="#">Fashion</a>
-								</li>
-								<li class="nav-item">
-								  <a class="nav-link-blue ptsans-regular tech6" href="#">Tech</a>
-								</li>
-								<li class="nav-item">
-								  <a class="nav-link-blue ptsans-regular last" href="#">
-									  <div class="nav-box">
-										  <div class="point one"></div>
-										  <div class="point"></div>
-										  <div class="point"></div>
-									  </div>
-								  </a>
-								</li>
-							  </ul>
+					<div class="container-lg">
+						<nav class="nav" style="margin: 0 auto;">
+							<a href="#" class="nav-logo-link ptsans-regular text-white">Blog <span class="ptsans-bold">template</span></a>
+							<div class="left-bar">
+								<a href="#" class="left-link left-link-img">
+									<img src="img/search.png" alt="img/search.png" class="search-img">
+								</a>
+								<a href="#" class="left-link">About</a>
+								<a href="#" class="left-link">Cooperation</a>
+								<a href="#" class="left-link">Contact</a>
 							</div>
-						  </nav>
+							<div class="right-bar ml-auto">
+								<a href="#" class="right-link">Nature</a>
+								<a href="#" class="right-link">People</a>
+								<a href="#" class="right-link">Trips</a>
+								<a href="#" class="right-link">Animals</a>
+								<a href="#" class="right-link">Fashion</a>
+								<a href="#" class="right-link">Tech</a>
+								<a href="#" class="right-link">
+									<svg class="bi bi-three-dots" width="2em" height="2em" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+										<path fill-rule="evenodd" d="M5 11.5a1.5 1.5 0 110-3 1.5 1.5 0 010 3zm5 0a1.5 1.5 0 110-3 1.5 1.5 0 010 3zm5 0a1.5 1.5 0 110-3 1.5 1.5 0 010 3z" clip-rule="evenodd"/>
+  									</svg>
+								</a>
+							</div>
+							<button class="hamburger hamburger--emphatic ml-auto" type="button">
+								<span class="hamburger-box">
+								  <span class="hamburger-inner"></span>
+								</span>
+							  </button>
+						</nav>
 					</div>
 				</div>
 				<div id="demo" class="carousel slide" data-ride="carousel">
 					<div class="carousel-inner text-center">
 					  <div class="carousel-item active">
-						<img src="img/2000x700-2.jpg" alt="img/cement_Building.jpg" class="carousel-img" width="2000" height="700">
+						<img src="img/2000x700-2.jpg" alt="img/cement_Building.jpg" class="carousel-img">
 						<div class="carousel-caption">
 						</div>   
 					  </div>
 					  <div class="carousel-item">
-						<img src="img/2000x700-7.jpg" alt="img/christmas.jpeg" class="carousel-img" width="2000" height="700">
+						<img src="img/2000x700-7.jpg" alt="img/christmas.jpeg" class="carousel-img">
 						<div class="carousel-caption">
 						</div>   
 					  </div>
 					  <div class="carousel-item">
-						<img src="img/2000x700-3.jpg" alt="img/header-banner.jpg" class="carousel-img" width="2000" height="700">
+						<img src="img/2000x700-3.jpg" alt="img/header-banner.jpg" class="carousel-img">
 						<div class="carousel-caption">
 						</div>   
 					  </div>
@@ -284,34 +263,6 @@
 				</p>
 			</footer>
 		</div>
-		<script type="text/javascript">
-			document.addEventListener("DOMContentLoaded",function(){
-			  let node = document.querySelector('.preloa-transitions');
-			  node.classList.remove('preloa-transitions');
-			});
-
-
-			var h = document.documentElement,
-  				b = document.body,
-  				st = 'scrollTop',
-  				sh = 'scrollHeight',
-  				progress = document.querySelector('.progress'),
-  				scroll;
-
-			document.addEventListener('scroll', function() {
-  				scroll = (h[st]||b[st]) / ((h[sh]||b[sh]) - h.clientHeight) * 100;
-  				progress.style.setProperty('--scroll', scroll + '%');
-				if(st=='0'){
-					progress.style.display=' none';
-				}
-			});
-			// window.addEventListener('scroll', event=>{
-			// 	let scrollTop=document.documentElement.scrollTop
-			// 	let scrollHeight=document.documentElement.scrollHeight-
-			// 	document.documentElement.clientHeight;
-			// 	let progress=100*scrollTop/scrollHeight;
-			// 	document.querySelector('.progress').style.width=progress+"%";
-			// });
-		</script>
+		<script type="text/javascript" src="js/script.js" defer></script>
 </body>
 </html>

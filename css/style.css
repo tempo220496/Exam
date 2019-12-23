@@ -168,87 +168,73 @@ body {
   margin: 0 auto;
 }
 
-.navbar-brand {
+.nav {
+  height: 4.375rem;
+  background-color: #fff;
+}
+
+.nav-logo-link {
   background: #1a54e7;
+  padding: 1rem 2rem 1rem 0;
+  font-size: 1.5rem;
+  cursor: pointer;
 }
-
-.navbar-nav:last-child .nav-link {
-  color: #1a54e7;
-}
-
-.nav-box {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-}
-
-.header .point {
-  width: 6px;
-  height: 6px;
-  border-radius: 50%;
-  background: #1a54e7;
-  margin-left: 5px;
-}
-
-.nav-link-blue {
-  color: #1a54e7;
-  padding-right: 2.1875rem;
-  font-size: 1.125rem;
-  position: relative;
-}
-.nav-link-blue:hover {
+.nav-logo-link:hover {
   text-decoration: none;
 }
-.nav-link-blue:hover:after {
-  content: "";
-  width: 71px;
-  height: 3px;
-  background-color: #1a54e7;
-  position: absolute;
-  left: -10px;
-  top: 200%;
+
+.left-bar {
+  padding-top: 1.5rem;
 }
 
-.trips3:hover:after {
-  left: -15px;
+.right-bar {
+  padding-top: 1.3rem;
 }
 
-.animals4:hover:after {
-  left: -5px;
+.left-link, .right-link {
+  font-size: 1.125rem;
+  font-family: "PTSans-Regular";
+  padding: 1rem;
+}
+.left-link:hover, .right-link:hover {
+  text-decoration: none;
 }
 
-.fashion5:hover:after {
-  left: -5px;
+.right-link {
+  position: relative;
+  padding: 1rem 0.8rem 1.2rem;
+}
+.right-link:hover {
+  border-bottom: 3px solid #1a54e7;
 }
 
-.tech6:hover:after {
-  left: -15px;
+.left-link-img {
+  padding: 1.6rem 1.5rem 1.4rem;
+  background-color: #f6f6f6;
 }
 
-.nav-box {
-  padding-right: 2.1875rem;
+.left-link {
+  color: #b1b1b1;
+}
+
+.carousel-img {
+  max-width: 2000px;
   position: relative;
 }
-.nav-box:hover:after {
-  content: "";
-  width: 71px;
-  height: 3px;
-  background-color: #1a54e7;
-  position: absolute;
-  left: -15px;
-  top: 146%;
+
+.header .hamburger {
+  display: none;
 }
 
-nav {
-  max-width: 75rem;
-}
+@media screen and (max-width: 1200px) {
+  .nav-logo-link {
+    padding: 1rem 2rem 1rem 0;
+  }
 
-.nav-link-img {
-  background: #f1f1f1;
-  padding: 1.5rem;
+  .header .right-bar {
+    display: none;
+  }
 }
-
 .progress {
   background: linear-gradient(to right, yellow var(--scroll), transparent 0);
   background-repeat: no-repeat;
@@ -263,8 +249,20 @@ nav {
 }
 
 @media screen and (max-width: 768px) {
+  .top {
+    max-width: 768px;
+  }
+
   .carousel-img {
     max-width: 535px;
+  }
+
+  .left-bar {
+    display: none;
+  }
+
+  .header .hamburger {
+    display: block;
   }
 }
 .header .covered-block1 {
@@ -304,66 +302,8 @@ nav {
   .header .covered-block1 {
     max-width: 58rem;
   }
-
-  .nav-link-blue {
-    padding-right: 0.6875rem;
-  }
 }
 @media screen and (max-width: 992px) {
-  .navbar-nav {
-    top: -72px;
-    position: relative;
-    z-index: 3;
-  }
-
-  .nav-item {
-    background-color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-right: 0;
-    border-bottom: 1px solid #1a54e7;
-  }
-
-  .nav-link {
-    cursor: pointer;
-  }
-
-  .nav-link-blue {
-    padding: 0.5rem 0;
-    cursor: pointer;
-  }
-  .nav-link-blue:hover:after {
-    content: "";
-    max-width: 4rem;
-    height: 0.15rem;
-    background-color: #1a54e7;
-    position: absolute;
-    left: -10px;
-    top: 95%;
-  }
-
-  .navbar-nav .last {
-    padding: 1rem 0;
-  }
-
-  .navbar-nav .nav-box {
-    padding-right: 0;
-  }
-  .navbar-nav .nav-box:hover:after {
-    content: none;
-  }
-
-  .navbar-nav .nature1:hover:after {
-    content: "";
-    width: 5rem;
-    height: 0.25rem;
-    background-color: #1a54e7;
-    position: absolute;
-    left: -10px;
-    top: 90%;
-  }
-
   .header .covered-block1 {
     max-width: 45rem;
   }
@@ -382,6 +322,14 @@ nav {
     margin-top: 0.5rem;
   }
 
+  .top {
+    margin: 0 1rem;
+  }
+
+  #demo {
+    margin-top: 1rem;
+  }
+
   #demo .people {
     position: absolute;
     top: 505px;
@@ -392,6 +340,10 @@ nav {
     position: absolute;
     top: 525px;
     right: 0;
+  }
+
+  #demo .carousel-img {
+    height: 20rem;
   }
 }
 @media screen and (max-width: 320px) {
@@ -418,6 +370,11 @@ nav {
     top: 660px;
     right: 15%;
   }
+
+  #demo .carousel-img {
+    height: 10rem;
+    object-position: -120px 0;
+  }
 }
 .section1 .card {
   margin-top: 3.125rem;
@@ -436,9 +393,9 @@ nav {
   height: 16.25rem;
 }
 
-@media screen and (min-width: 1125px) {
-  .section1 .firstPicture, .secondPicture {
-    background-position: right;
+@media screen and (max-width: 320px) {
+  .section1 .secondPicture {
+    background-position: center;
   }
 }
 .card-info {
@@ -529,14 +486,6 @@ nav {
     font-size: 3rem;
     line-height: 3rem;
     font-weight: normal;
-  }
-
-  .section2 .trips {
-    top: 80%;
-  }
-
-  .section2 .section2-info-date {
-    top: 90%;
   }
 }
 .section3 {
@@ -687,6 +636,11 @@ nav {
   top: 75%;
 }
 
+@media screen and (max-width: 320px) {
+  .section4 .secondPicture {
+    background-position: center;
+  }
+}
 .section5 {
   height: 26.125rem;
   background: url("../img/Newsletter.png") no-repeat;
@@ -723,6 +677,9 @@ nav {
   padding: 0.85rem 2.375rem;
   border-radius: 40px;
   margin-left: auto;
+}
+.rounded-link:hover {
+  text-decoration: none;
 }
 
 .footer {
