@@ -144,7 +144,7 @@ body {
   color: black;
 }
 
-.preloa-transitions * {
+.preload-transitions * {
   -webkit-transition: none !important;
   -moz-transition: none !important;
   -ms-transition: none !important;
@@ -178,17 +178,21 @@ body {
   padding: 1rem 2rem 1rem 0;
   font-size: 1.5rem;
   cursor: pointer;
+  font-weight: normal;
 }
 .nav-logo-link:hover {
   text-decoration: none;
 }
-
-.left-bar {
-  padding-top: 1.5rem;
+.nav-logo-link span {
+  font-weight: bold;
 }
 
-.right-bar {
-  padding-top: 1.3rem;
+.left-list, .right-list {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  padding-left: 0;
+  margin-bottom: 0;
 }
 
 .left-link, .right-link {
@@ -200,17 +204,34 @@ body {
   text-decoration: none;
 }
 
+.cooperation, .contact {
+  margin-top: 0.4rem;
+  height: 59px;
+}
+
+.left-item {
+  display: inline-block;
+}
+
 .header .right-link {
   position: relative;
-  padding: 1rem 0.8rem 1.2rem;
+  padding: 1.2rem 0.8rem 1.3rem;
 }
 .header .right-link:hover {
   border-bottom: 3px solid #1a54e7;
 }
 
+.header .right-link-dots {
+  padding: 1rem 1rem 0.9rem;
+}
+.header .right-link-dots:hover {
+  border-bottom: 3px solid #1a54e7;
+}
+
 .left-link-img {
-  padding: 1.6rem 1.5rem 1.4rem;
+  padding: 1.4rem 1.5rem 1.4rem;
   background-color: #f6f6f6;
+  height: 70px;
 }
 
 .left-link {
@@ -218,7 +239,8 @@ body {
 }
 
 .carousel-img {
-  max-width: 2000px;
+  max-width: 100%;
+  height: auto;
   position: relative;
 }
 
@@ -231,8 +253,16 @@ body {
     padding: 1rem 2rem 1rem 0;
   }
 
-  .header .right-bar {
+  .header .right-list {
     display: none;
+  }
+
+  .cooperation, .contact {
+    margin-top: 0;
+  }
+
+  .left-list {
+    height: 59px;
   }
 }
 .progress {
@@ -253,16 +283,17 @@ body {
     max-width: 768px;
   }
 
-  .carousel-img {
-    max-width: 535px;
-  }
-
-  .left-bar {
+  .left-link {
     display: none;
   }
 
   .header .hamburger {
     display: block;
+  }
+}
+@media screen and (max-width: 568px) {
+  .left-link-img {
+    display: none;
   }
 }
 .header .covered-block1 {
@@ -280,10 +311,6 @@ body {
   max-width: 53.4609375rem;
   margin: 2.5rem auto 0;
   font-size: 3rem;
-}
-
-.carousel-img {
-  object-position: 50% 50%;
 }
 
 #demo .people {
@@ -341,10 +368,6 @@ body {
     top: 525px;
     right: 0;
   }
-
-  #demo .carousel-img {
-    height: 20rem;
-  }
 }
 @media screen and (max-width: 320px) {
   body {
@@ -369,11 +392,6 @@ body {
   #demo .card-info {
     top: 660px;
     right: 15%;
-  }
-
-  #demo .carousel-img {
-    height: 10rem;
-    object-position: -100px 0;
   }
 }
 .section1 .card {
@@ -677,6 +695,7 @@ body {
   padding: 0.85rem 2.375rem;
   border-radius: 40px;
   margin-left: auto;
+  transition: 0.5s;
 }
 .rounded-link:hover {
   text-decoration: none;
@@ -793,7 +812,7 @@ body {
 }
 @media screen and (max-width: 500px) {
   .myModal-message {
-    top: 9.625rem;
+    top: 7.625rem;
     max-width: 410px;
     padding: 0 2.125rem 2rem;
   }
@@ -861,12 +880,12 @@ body {
   }
 
   .myModal-link {
-    font-size: 0.75rem;
+    font-size: 1.125rem;
     max-width: 216px;
     height: 69px;
   }
 }
-@media screen and (max-width: 455px) {
+@media screen and (max-width: 500px) {
   .myModal-title {
     font-size: 2rem;
   }

@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded",function(){
-    let node = document.querySelector('.preloa-transitions');
+    let node = document.querySelector('.preload-transitions');
     node.classList.remove('preloa-transitions');
   });
 
