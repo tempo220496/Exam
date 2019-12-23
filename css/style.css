@@ -200,11 +200,11 @@ body {
   text-decoration: none;
 }
 
-.right-link {
+.header .right-link {
   position: relative;
   padding: 1rem 0.8rem 1.2rem;
 }
-.right-link:hover {
+.header .right-link:hover {
   border-bottom: 3px solid #1a54e7;
 }
 
