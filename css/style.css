@@ -716,24 +716,25 @@ body {
 
 .myModal-message {
   max-width: 1188px;
-  height: 420px;
+  max-height: 560px;
   background: #fff;
   border-radius: 5px;
   position: fixed;
   top: 13.625rem;
-  padding: 0 8.125rem;
+  padding: 0 8.125rem 4rem;
+  margin: 0 1rem;
 }
 
 .myModal-block {
-  max-width: 22.75rem;
+  max-width: 20rem;
   height: 9.375rem;
   margin: 0 auto;
   position: relative;
 }
 
 .myModal-circle1 {
-  max-width: 20.75rem;
-  height: 20.75rem;
+  max-width: 20rem;
+  height: 20rem;
   border-radius: 50%;
   box-shadow: 7px 7px 10px rgba(0, 0, 0, 0.5);
   position: relative;
@@ -743,8 +744,8 @@ body {
 }
 
 .myModal-circle2 {
-  max-width: 20.75rem;
-  height: 20.75rem;
+  max-width: 20rem;
+  height: 20rem;
   border-radius: 50%;
   box-shadow: 7px 7px 10px #ebfc8d;
   position: relative;
@@ -762,6 +763,62 @@ body {
   margin: 0 auto;
 }
 
+@media screen and (max-width: 902px) {
+  .myModal-message {
+    padding: 0 4.125rem 2rem;
+  }
+
+  .myModal-circle1 {
+    max-width: 15rem;
+    height: 15rem;
+    left: 1%;
+    bottom: 8rem;
+  }
+
+  .myModal-circle2 {
+    max-width: 15rem;
+    height: 15rem;
+    bottom: 22.75rem;
+    left: 1%;
+  }
+
+  .myModal-block {
+    max-width: 15rem;
+    height: 7.03125rem;
+  }
+
+  .myModal-img {
+    max-width: 141px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .myModal-message {
+    top: 9.625rem;
+    max-width: 410px;
+    padding: 0 2.125rem 2rem;
+  }
+
+  .myModal-block {
+    max-width: 10rem;
+    height: 4.6875rem;
+  }
+
+  .myModal-circle1 {
+    max-width: 10rem;
+    height: 10rem;
+    bottom: 5rem;
+  }
+
+  .myModal-circle2 {
+    max-width: 10rem;
+    height: 10rem;
+    bottom: 14rem;
+  }
+
+  .myModal-img {
+    max-width: 94px;
+  }
+}
 .myModal-title {
   margin-top: 2rem;
   color: #d92d42;
@@ -792,6 +849,37 @@ body {
   text-decoration: none;
   color: black;
   background: white;
+}
+
+@media screen and (max-width: 902px) {
+  .myModal-title {
+    font-size: 2.5rem;
+  }
+
+  .myModal-intro {
+    font-size: 1.4rem;
+  }
+
+  .myModal-link {
+    font-size: 0.75rem;
+    max-width: 216px;
+    height: 69px;
+  }
+}
+@media screen and (max-width: 455px) {
+  .myModal-title {
+    font-size: 2rem;
+  }
+
+  .myModal-intro {
+    font-size: 1rem;
+  }
+
+  .myModal-link {
+    font-size: 0.75rem;
+    max-width: 144px;
+    height: 46px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

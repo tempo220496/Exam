@@ -37,10 +37,9 @@ document.addEventListener("DOMContentLoaded",function(){
   // 	document.querySelector('.progress').style.width=progress+"%";
   // });
 
+
 var myModal=document.querySelector(".myModal");
 myModal.style.display='none';
-
-
 var roundedLink=document.querySelector(".rounded-link");
 roundedLink.addEventListener('click',function(event){
     event.preventDefault();
