@@ -119,6 +119,7 @@ body
 	background-image: linear-gradient(90deg, #1a54e7 50%, #fff 50%)
 	margin: 0 auto
 .nav
+	max-width: 1200px
 	height: 4.375rem
 	background-color: #fff
 .nav-logo-link
@@ -131,56 +132,75 @@ body
 		text-decoration: none
 	& span
 		font-weight: bold
-.left-list,.right-list
-	list-style-type: none
+.left-bar
+	padding-left: 0
+	margin-bottom: 0
+	display: flex
+	align-items: center
+.left-link
+	color: #b1b1b1
+	padding-left: 2.25rem
+	&:hover
+		text-decoration: none
+.right-bar
 	display: flex
 	align-items: center
 	padding-left: 0
 	margin-bottom: 0
-.left-link,.right-link
-	font-size: 1.125rem
-	font-family: "PTSans-Regular"
-	padding: 1rem
-	&:hover
-		text-decoration: none
 .cooperation,.contact
 	margin-top: 0.4rem
 	height: 59px
-.left-item
-	display: inline-block
 .header .right-link
+	font-size: 1.125rem
+	font-family: "PTSans-Regular"
+	padding: 1rem
 	position: relative
 	padding: 1.2rem 0.8rem 1.3rem
 	&:hover
+		text-decoration: none
 		border-bottom: 3px solid #1a54e7
 .header .right-link-dots
 	padding: 1rem 1rem 0.9rem
 	&:hover
+		text-decoration: none
 		border-bottom: 3px solid #1a54e7
-.left-link-img
+.search-link-img
 	// margin-top: 0.4rem
 	padding: 1.4rem 1.5rem 1.4rem
 	background-color: #f6f6f6
 	height: 70px
-.left-link
-	color: #b1b1b1
+.header .right-bar
+	margin-left: auto
 .carousel-img
 	max-width: 100%
 	height: auto
 	position: relative
 .header .hamburger
 	display: none
+	height: 70px
 @media screen and (max-width: 1200px)
 	.nav-logo-link
 		padding: 1rem 2rem 1rem 0
-	.header .right-list
-		display: none
-		// position: relative
-		// z-index: 1
+	.right-bar
+		flex-direction: column
+		position: relative
+		top: 0
+		z-index: 100
+		width: 100%
+		text-align: center
+		background-color: white
+	.right-link
+		width: 100%
+		padding: 1rem 
+		border-bottom: 1px solid #1a54e7
+	.about
+		padding-top: 2rem
 	.cooperation,.contact
 		margin-top: 0
-	.left-list
-		height: 59px
+		padding-top: 1.5rem
+	.header .hamburger
+		display: block
+		align-self: flex-start
 .progress
 	background: linear-gradient(to right, yellow var(--scroll),transparent 0)
 	background-repeat: no-repeat
@@ -193,13 +213,11 @@ body
 @media screen and (max-width: 768px)
 	.top
 		max-width: 768px
-	.left-link
+	.nav
+		max-width: 740px
+	.left-bar
 		display: none
-	.header .hamburger
-		display: block
 @media screen and (max-width: 568px)
-	.left-link-img
-		display: none
 .header .covered-block1
 	position: absolute
 	z-index: 2
@@ -234,6 +252,7 @@ body
 		position: relative
 		padding: 1.5rem 0
 		margin-top: 0
+		background: #fff
 	.header .covered-title
 		color: #1a54e7
 		margin-top: 0.5rem
@@ -266,6 +285,14 @@ body
 		right: 15%
 
 
+
+
+
+
+
+
+
+
 .section1 .card
 	margin-top: 3.125rem
 	background-color: #f6f6f6
@@ -291,6 +318,14 @@ body
 .section1 .tech
 	position: relative
 	top: 75%
+
+
+
+
+
+
+
+
 
 
 
