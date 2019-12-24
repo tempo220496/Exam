@@ -20,8 +20,32 @@ document.addEventListener("DOMContentLoaded",function(){
   });
 
 
-document.querySelector("#about").onclick=function(){
+document.querySelector("#more").onclick=function(){
     var sidebar=document.querySelector(".right-bar");
-    sidebar.classList.toggle('show')
-    
+    sidebar.classList.toggle('show');
 }
+var rounded_link=document.querySelector(".rounded-link");
+rounded_link.addEventListener("click",function(event){
+  event.preventDefault();
+  document.querySelector(".myModal").style.display="block";
+});
+var myModal_link=document.querySelector(".myModal-link");
+myModal_link.addEventListener("click",function(event){
+  event.preventDefault();
+  document.querySelector(".myModal").style.display="none";
+});
+
+
+
+
+var hamburger=document.querySelector('.hamburger');
+	var nav=document.querySelector('.nav');
+	var close=document.querySelector(".nav-close");
+hamburger.addEventListener('click',function(){
+	hamburger.classList.toggle('is-active');
+	nav.classList.add('is-active');
+});
+close.addEventListener('click',function(){
+	hamburger.classList.toggle('is-active');
+	nav.classList.remove('is-active');
+});

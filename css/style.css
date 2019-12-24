@@ -144,6 +144,10 @@ body {
   color: black;
 }
 
+.clear {
+  clear: both;
+}
+
 .preload-transitions * {
   -webkit-transition: none !important;
   -moz-transition: none !important;
@@ -251,23 +255,33 @@ body {
   height: 70px;
 }
 
+.header #more {
+  display: none;
+}
+
 @media screen and (max-width: 1200px) {
   .header .nav-logo-link {
     padding: 1rem 2rem 1rem 0;
   }
 
+  .header #more {
+    display: block;
+  }
+
   .header .right-bar {
+    border-top: 1px solid #320d6e;
     flex-direction: column;
     position: relative;
-    top: -502px;
+    top: 0;
+    left: -100%;
     z-index: 100;
     width: 100%;
     text-align: center;
     background-color: white;
-    transition: all linear 0.5s;
+    transition: all linear 0.2s;
   }
   .header .right-bar.show {
-    top: 0;
+    left: 0;
   }
 
   .header .right-link {
@@ -278,8 +292,7 @@ body {
   }
   .header .right-link:hover {
     background-image: linear-gradient(#cccccc59 50%, white 80%);
-    border-top: 2px solid #1a54e777;
-    border-bottom: 2px solid #1a54e777;
+    border-bottom: none;
   }
 }
 .progress {
@@ -295,17 +308,44 @@ body {
   position: relative;
 }
 
+.header .hamburger-inner {
+  background-color: #1a54e7;
+}
+.header .hamburger-inner:before {
+  background-color: #1a54e7;
+}
+.header .hamburger-inner:after {
+  background-color: #1a54e7;
+}
+
 @media screen and (max-width: 768px) {
-  .top {
+  .header .top {
     max-width: 768px;
   }
 
-  .nav {
+  .header .nav {
     max-width: 740px;
   }
 
-  .left-bar {
-    display: none;
+  .header .left-bar {
+    flex-direction: column;
+    z-index: 1;
+    background: white;
+    position: relative;
+    width: 100%;
+    left: -100%;
+    text-align: center;
+  }
+
+  .header .left-link {
+    background-image: linear-gradient(white 50%, #cccccc9f 80%);
+    padding: 1rem;
+    width: 100%;
+    font-weight: bold;
+    color: #900ae9;
+  }
+  .header .left-link:hover {
+    background-image: linear-gradient(#cccccc59 50%, white 80%);
   }
 
   .header .hamburger {
@@ -324,7 +364,7 @@ body {
 }
 
 .covered-title {
-  color: white;
+  color: #1a54e7;
   max-width: 53.4609375rem;
   margin: 2.5rem auto 0;
   font-size: 3rem;
@@ -736,6 +776,7 @@ body {
   background-color: rgba(0, 0, 0, 0.7);
   position: fixed;
   z-index: 200;
+  display: none;
 }
 
 .myModal .myContainer {

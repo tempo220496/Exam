@@ -97,6 +97,8 @@ body
 	background-color: white
 	text-decoration: none
 	color: black
+.clear
+	clear: both
 .preload-transitions *
 	$null-transition: none !important
 	-webkit-transition: $null-transition
@@ -174,23 +176,26 @@ body
 .header .hamburger
 	display: none
 	height: 70px
+.header #more
+	display: none
 @media screen and (max-width: 1200px)
 	.header .nav-logo-link
 		padding: 1rem 2rem 1rem 0
-	// .header .right-block
-	// 	width: 100%
-	// 	display: block
+	.header #more
+		display: block
 	.header .right-bar
+		border-top: 1px solid #320d6e
 		flex-direction: column
 		position: relative
-		top: -502px
+		top: 0
+		left: -100%
 		z-index: 100
 		width: 100%
 		text-align: center 
 		background-color: white
-		transition: all linear .5s
+		transition: all linear .2s
 		&.show
-			top: 0
+			left: 0
 	.header .right-link
 		width: 100%
 		padding: 1rem 
@@ -198,8 +203,7 @@ body
 		background-image: linear-gradient(white 50%,#cccccc9f 80%)
 		&:hover
 			background-image: linear-gradient(#cccccc59 50%,white 80%)
-			border-top: 2px solid #1a54e777
-			border-bottom: 2px solid #1a54e777
+			border-bottom: none
 .progress
 	background: linear-gradient(to right, yellow var(--scroll),transparent 0)
 	background-repeat: no-repeat
@@ -209,13 +213,33 @@ body
 	z-index: 200
 .carousel
 	position: relative
+.header .hamburger-inner
+	background-color: #1a54e7 
+	&:before
+		background-color: #1a54e7 
+	&:after
+		background-color: #1a54e7 
 @media screen and (max-width: 768px)
-	.top
+	.header .top
 		max-width: 768px
-	.nav
+	.header .nav
 		max-width: 740px
-	.left-bar
-		display: none
+	.header .left-bar
+		flex-direction: column
+		z-index: 1
+		background: white
+		position: relative
+		width: 100%
+		left: -100%
+		text-align: center
+	.header .left-link
+		background-image: linear-gradient(white 50%,#cccccc9f 80%)
+		padding: 1rem
+		width: 100%
+		font-weight: bold
+		color: #900ae9
+		&:hover
+			background-image: linear-gradient(#cccccc59 50%,white 80%)
 	.header .hamburger
 		display: block
 		align-self: flex-start
@@ -229,7 +253,7 @@ body
 	max-width: 74rem
 	padding: 0
 .covered-title
-	color: white
+	color: #1a54e7
 	max-width: 53.4609375rem
 	margin: 2.5rem auto 0
 	font-size: 3rem
@@ -539,6 +563,7 @@ body
 	background-color: rgba(0,0,0,.7)
 	position: fixed
 	z-index: 200
+	display: none
 .myModal .myContainer
 	max-width: 1088.2px
 	margin: 0 auto
