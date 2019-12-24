@@ -39,13 +39,6 @@ myModal_link.addEventListener("click",function(event){
 
 
 var hamburger=document.querySelector('.hamburger');
-	var nav=document.querySelector('.nav');
-	var close=document.querySelector(".nav-close");
 hamburger.addEventListener('click',function(){
-	hamburger.classList.toggle('is-active');
-	nav.classList.add('is-active');
-});
-close.addEventListener('click',function(){
-	hamburger.classList.toggle('is-active');
-	nav.classList.remove('is-active');
+	document.querySelector('.left-bar').classList.toggle('is-active');
 });

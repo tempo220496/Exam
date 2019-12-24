@@ -335,6 +335,10 @@ body {
     width: 100%;
     left: -100%;
     text-align: center;
+    transition: all linear 0.2s;
+  }
+  .header .left-bar.is-active {
+    left: 0;
   }
 
   .header .left-link {
