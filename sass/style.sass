@@ -139,7 +139,7 @@ body
 	align-items: center
 .left-link
 	color: #b1b1b1
-	padding-left: 2.25rem
+	padding: 1.5rem 1.125rem 1.4rem 1.125rem
 	&:hover
 		text-decoration: none
 .right-bar
@@ -147,9 +147,6 @@ body
 	align-items: center
 	padding-left: 0
 	margin-bottom: 0
-.cooperation,.contact
-	margin-top: 0.4rem
-	height: 59px
 .header .right-link
 	font-size: 1.125rem
 	font-family: "PTSans-Regular"
@@ -165,7 +162,6 @@ body
 		text-decoration: none
 		border-bottom: 3px solid #1a54e7
 .search-link-img
-	// margin-top: 0.4rem
 	padding: 1.4rem 1.5rem 1.4rem
 	background-color: #f6f6f6
 	height: 70px
@@ -179,28 +175,31 @@ body
 	display: none
 	height: 70px
 @media screen and (max-width: 1200px)
-	.nav-logo-link
+	.header .nav-logo-link
 		padding: 1rem 2rem 1rem 0
-	.right-bar
+	// .header .right-block
+	// 	width: 100%
+	// 	display: block
+	.header .right-bar
 		flex-direction: column
 		position: relative
-		top: 0
+		top: -502px
 		z-index: 100
 		width: 100%
-		text-align: center
+		text-align: center 
 		background-color: white
-	.right-link
+		transition: all linear .5s
+		&.show
+			top: 0
+	.header .right-link
 		width: 100%
 		padding: 1rem 
-		border-bottom: 1px solid #1a54e7
-	.about
-		padding-top: 2rem
-	.cooperation,.contact
-		margin-top: 0
-		padding-top: 1.5rem
-	.header .hamburger
-		display: block
-		align-self: flex-start
+		font-weight: bold
+		background-image: linear-gradient(white 50%,#cccccc9f 80%)
+		&:hover
+			background-image: linear-gradient(#cccccc59 50%,white 80%)
+			border-top: 2px solid #1a54e777
+			border-bottom: 2px solid #1a54e777
 .progress
 	background: linear-gradient(to right, yellow var(--scroll),transparent 0)
 	background-repeat: no-repeat
@@ -217,6 +216,9 @@ body
 		max-width: 740px
 	.left-bar
 		display: none
+	.header .hamburger
+		display: block
+		align-self: flex-start
 @media screen and (max-width: 568px)
 .header .covered-block1
 	position: absolute
@@ -256,10 +258,6 @@ body
 	.header .covered-title
 		color: #1a54e7
 		margin-top: 0.5rem
-	.top
-		margin: 0 1rem
-	#demo
-		margin-top: 1rem
 	#demo .people
 		position: absolute
 		top: 505px
