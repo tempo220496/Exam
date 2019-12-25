@@ -45,6 +45,10 @@ hamburger.addEventListener('click',function(){
   sidebar.classList.toggle('show');
 });
 
+
+
+
+
 var slideItem=document.querySelectorAll('.slide-item'),
     prevBtn=document.querySelector('#left-button'),
     nextBtn=document.querySelector('#right-button'),
