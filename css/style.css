@@ -161,6 +161,11 @@ body {
     background-color: #1a54e791;
   }
 }
+@media screen and (max-width: 320px) {
+  body {
+    width: 320px;
+  }
+}
 .wrapper {
   max-width: 2000px;
   margin: 0 auto;
@@ -244,12 +249,6 @@ body {
   margin-left: auto;
 }
 
-.carousel-img {
-  max-width: 100%;
-  height: auto;
-  position: relative;
-}
-
 .header .hamburger {
   display: none;
   height: 70px;
@@ -269,7 +268,6 @@ body {
   }
 
   .header .right-bar {
-    border-top: 1px solid #320d6e;
     flex-direction: column;
     position: relative;
     top: 0;
@@ -304,10 +302,6 @@ body {
   z-index: 200;
 }
 
-.carousel {
-  position: relative;
-}
-
 .header .hamburger-inner {
   background-color: #1a54e7;
 }
@@ -329,7 +323,7 @@ body {
 
   .header .left-bar {
     flex-direction: column;
-    z-index: 1;
+    z-index: 150;
     background: white;
     position: relative;
     width: 100%;
@@ -357,97 +351,48 @@ body {
     align-self: flex-start;
   }
 }
-.header .covered-block1 {
-  position: absolute;
-  z-index: 2;
-  top: 0;
-  margin: 13rem auto 0;
-  height: 500px;
-  max-width: 74rem;
-  padding: 0;
+.slider {
+  margin: 0 auto;
+  max-width: 2000px;
+  height: 768px;
+  position: relative;
 }
 
-.covered-title {
-  color: #1a54e7;
-  max-width: 53.4609375rem;
-  margin: 2.5rem auto 0;
+.slides {
+  max-width: 100%;
+  height: auto;
+  z-index: 1;
+}
+
+.slide-item {
+  max-width: 100%;
+  height: auto;
+}
+
+#left-button, #right-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #030303;
+  background-color: white;
   font-size: 3rem;
+  cursor: pointer;
+  padding: 0 0.8rem 0.5rem 0.7rem;
+  border-radius: 5px;
+}
+#left-button:hover, #right-button:hover {
+  background-color: #b6b6b6;
+  color: #1a54e7;
 }
 
-#demo .people {
-  position: absolute;
-  top: 400px;
+#left-button {
   left: 0;
 }
 
-#demo .card-info {
-  position: absolute;
-  top: 410px;
+#right-button {
   right: 0;
 }
 
-@media screen and (max-width: 1200px) {
-  .header .covered-block1 {
-    max-width: 58rem;
-  }
-}
-@media screen and (max-width: 992px) {
-  .header .covered-block1 {
-    max-width: 45rem;
-  }
-}
-@media screen and (max-width: 768px) {
-  .header .covered-block1 {
-    max-width: 33.75rem;
-    height: 36rem;
-    position: relative;
-    padding: 1.5rem 0;
-    margin-top: 0;
-    background: #fff;
-  }
-
-  .header .covered-title {
-    color: #1a54e7;
-    margin-top: 0.5rem;
-  }
-
-  #demo .people {
-    position: absolute;
-    top: 505px;
-    left: 0;
-  }
-
-  #demo .card-info {
-    position: absolute;
-    top: 525px;
-    right: 0;
-  }
-}
-@media screen and (max-width: 320px) {
-  body {
-    width: 320px;
-  }
-
-  .header .covered-block1 {
-    height: 700px;
-  }
-
-  #demo {
-    padding: 0 1rem;
-  }
-
-  #demo .people {
-    top: 580px;
-    left: 23%;
-    right: 25%;
-    text-align: center;
-  }
-
-  #demo .card-info {
-    top: 660px;
-    right: 15%;
-  }
-}
 .section1 .card {
   margin-top: 3.125rem;
   background-color: #f6f6f6;

@@ -19,9 +19,9 @@ document.addEventListener("DOMContentLoaded",function(){
       }
   });
 
+var sidebar=document.querySelector(".right-bar");
 
 document.querySelector("#more").onclick=function(){
-    var sidebar=document.querySelector(".right-bar");
     sidebar.classList.toggle('show');
 }
 var rounded_link=document.querySelector(".rounded-link");
@@ -40,5 +40,33 @@ myModal_link.addEventListener("click",function(event){
 
 var hamburger=document.querySelector('.hamburger');
 hamburger.addEventListener('click',function(){
-	document.querySelector('.left-bar').classList.toggle('is-active');
+  document.querySelector('.left-bar').classList.toggle('is-active');
+  hamburger.classList.toggle('is-active');
+  sidebar.classList.toggle('show');
 });
+
+var slideItem=document.querySelectorAll('.slide-item'),
+    prevBtn=document.querySelector('#left-button'),
+    nextBtn=document.querySelector('#right-button'),
+    slideIndex=1;
+showSlides(slideIndex);
+function showSlides(n){
+    if(n<1){
+        slideIndex=slideItem.length;
+    }else if(n>slideItem.length){
+        slideIndex=1;
+    }
+    for(let i=0;i<slideItem.length;i++){
+        slideItem[i].style.display="none";
+    }
+    slideItem[slideIndex-1].style.display='block';
+}
+function plusSlides(n){
+    showSlides(slideIndex+=n);
+}
+prevBtn.onclick=function(){
+    plusSlides(-1);
+}
+nextBtn.onclick=function(){
+    plusSlides(1);
+}
