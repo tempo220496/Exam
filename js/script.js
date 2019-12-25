@@ -42,9 +42,13 @@ hamburger.addEventListener('click',function(){
   var leftBar=document.querySelector('.left-bar');
   leftBar.classList.toggle('is-active');
   hamburger.classList.toggle('is-active');
+  rightBar.classList.toggle('show');
 });
 
 
+
+
+//Slider
 
 var slideItem=document.querySelectorAll('.slide-item'),
     prevBtn=document.querySelector('#left-button'),
@@ -71,3 +75,28 @@ prevBtn.onclick=function(){
 nextBtn.onclick=function(){
     plusSlides(1);
 }
+
+
+// function preloader(){
+//   $(()=>{
+//     setInterval(()=>{
+//       let p=$('.preloader');
+//       p.css('opacity',0);
+//     },1000);
+//   });
+// }
+// preloader();
+
+// $(document).ready(function () {
+ 
+  // preloader
+  // $(window).load(function(){
+  //   $('.preloader').delay(400).fadeOut(500);
+  // });
+
+
+
+// window.onload = function(){
+//   //hide the preloader
+//   document.querySelector(".preloader").style.display = "none";
+// }
