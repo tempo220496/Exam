@@ -46,8 +46,6 @@ hamburger.addEventListener('click',function(){
 
 
 
-
-
 var slideItem=document.querySelectorAll('.slide-item'),
     prevBtn=document.querySelector('#left-button'),
     nextBtn=document.querySelector('#right-button'),
