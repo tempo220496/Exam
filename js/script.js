@@ -19,11 +19,8 @@ document.addEventListener("DOMContentLoaded",function(){
       }
   });
 
-var sidebar=document.querySelector(".right-bar");
 
-document.querySelector("#more").onclick=function(){
-    sidebar.classList.toggle('show');
-}
+
 var rounded_link=document.querySelector(".rounded-link");
 rounded_link.addEventListener("click",function(event){
   event.preventDefault();
@@ -36,13 +33,15 @@ myModal_link.addEventListener("click",function(event){
 });
 
 
-
-
+var rightBar=document.querySelector(".right-bar");
+document.querySelector("#more").onclick=function(){
+  rightBar.classList.toggle('show');
+}
 var hamburger=document.querySelector('.hamburger');
 hamburger.addEventListener('click',function(){
-  document.querySelector('.left-bar').classList.toggle('is-active');
+  var leftBar=document.querySelector('.left-bar');
+  leftBar.classList.toggle('is-active');
   hamburger.classList.toggle('is-active');
-  sidebar.classList.toggle('show');
 });
 
 
