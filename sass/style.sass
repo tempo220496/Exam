@@ -222,7 +222,7 @@ body
 		width: 100%
 		padding: 1rem 
 		font-weight: bold
-		background-image: linear-gradient(white 50%,#cccccc9f 80%)
+		background-image: linear-gradient(#fff 50%,#cccccc9f 80%)
 		&:hover
 			background-image: linear-gradient(#cccccc59 50%,white 80%)
 			border-bottom: none
@@ -251,16 +251,20 @@ body
 			left: 0
 	.header .left-link
 		background-image: linear-gradient(white 50%,#cccccc9f 80%)
-		padding: 1rem
+		padding: 0.5rem 
 		width: 100%
 		font-weight: bold
 		color: #900ae9
 		&:hover
 			background-image: linear-gradient(#cccccc59 50%,white 80%)
+	.header .right-link
+		padding: 0.5rem 
+	.header .right-link-dots
+		padding: 0
 	.header #more
 		display: none
 	.header .right-bar
-		top: 238px
+		top: 190px
 	.header .hamburger
 		display: block
 		align-self: flex-start
@@ -307,24 +311,34 @@ body
 	left: 0
 #right-button
 	right: 0
-@media screen and (max-width: 414px)
+@media screen and (max-width: 824px)
+	#left-button
+		top: 25%
+	#right-button
+		top: 25%
+@media screen and (max-width: 768px)
 	.slide-item
 		object-fit: cover
 		object-position: 45% 0
 		height: 390px
+	#left-button, #right-button
+		font-size: 2rem
+		font-weight: bold
+@media screen and (max-width: 442px)
+	.slide-item
+		object-fit: cover
+		object-position: 45% 0
+		height: 460px
 	#left-button
 		top: 20%
 	#right-button
 		top: 20%
-@media screen and (max-width: 360px)
+@media screen and (max-width: 382px)
 	.slide-item
 		object-fit: cover
 		object-position: 45% 0
-		height: 390px
+		height: 500px
 @media screen and (max-width: 320px)
-	#left-button, #right-button
-		font-size: 2rem
-		font-weight: bold
 	#left-button
 		top: 25%
 	#right-button
@@ -342,7 +356,7 @@ body
 	left: 19%
 	right: 19%
 	height: 100%
-	// background-color: rgba(0,0,0,.5)
+	max-width: 1200px
 	text-align: center
 	padding-top: 13.5rem
 .covered-img
@@ -369,13 +383,13 @@ body
 @media screen and (max-width: 1760px)
 	.covered-block
 		padding-top: 9.5rem
-		left: 17%
-		right: 17%
+		left: 16%
+		right: 16%
 @media screen and (max-width: 1688px)
 	.covered-block
 		padding-top: 6.5rem
-		left: 15.5%
-		right: 15.5%
+		left: 15%
+		right: 15%
 @media screen and (max-width: 1600px)
 	.covered-block
 		padding-top: 4.5rem
@@ -384,17 +398,34 @@ body
 		left: 6.5%
 		right: 6.5%
 @media screen and (max-width: 1200px)
-	.covered-title
-		font-size: 2rem
 	.covered-block .people
 		bottom: 1rem
 	.covered-block .card-info
 		bottom: 2rem
+@media screen and (max-width: 1024px)
+	.covered-title
+		font-size: 2rem
+@media screen and (max-width: 900px)
+	.covered-block
+		padding-top: 2rem
+	.covered-title
+		margin-top: 0
 @media screen and (max-width: 768px)
 	.covered-block
-		padding-top: 1rem
-	.covered-block .card-info,.people
-		display: none
+		padding-top: 3rem
+		left: 15%
+		right: 15%
+@media screen and (max-width: 768px)
+	.covered-block
+		padding-top: 2rem
+@media screen and (max-width: 442px)
+	.covered-block .people
+		display: block
+		position: static
+		max-width: 150px
+		margin: 0.5rem auto
+	.covered-block .card-info
+		position: static
 @media screen and (max-width: 320px)
 	.covered-block
 		left: 5%
@@ -402,8 +433,10 @@ body
 		padding-top: 2rem
 	.covered-title
 		color: #fff
+	.covered-block .people
+		margin: 2.5rem auto 1rem
 	.covered-block .card-info
-		color: #1a54e7 
+		color: #fff
 
 
 
