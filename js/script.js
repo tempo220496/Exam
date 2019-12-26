@@ -76,27 +76,3 @@ nextBtn.onclick=function(){
     plusSlides(1);
 }
 
-
-// function preloader(){
-//   $(()=>{
-//     setInterval(()=>{
-//       let p=$('.preloader');
-//       p.css('opacity',0);
-//     },1000);
-//   });
-// }
-// preloader();
-
-// $(document).ready(function () {
- 
-  // preloader
-  // $(window).load(function(){
-  //   $('.preloader').delay(400).fadeOut(500);
-  // });
-
-
-
-// window.onload = function(){
-//   //hide the preloader
-//   document.querySelector(".preloader").style.display = "none";
-// }
