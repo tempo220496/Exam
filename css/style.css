@@ -497,6 +497,10 @@ body {
 
 .covered-img {
   max-width: 8.4375rem;
+  transition: 0.3s;
+}
+.covered-img:hover {
+  transform: scale(1.1);
 }
 
 .covered-title {
